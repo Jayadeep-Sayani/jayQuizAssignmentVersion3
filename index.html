@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JS Quiz Assignment</title>
+	<script src="quizproject.js"></script>
+	<link rel="stylesheet" type="text/css" href="quizproject.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#317EFB">
+    <link rel="manifest" href="manifest.json">
+  
+</head>
+<body>
+
+<div id="endscreen">
+  <p id="FinalScore"></p>
+  <div id="restart">Restart</div>
+</div>
+
+
+<div id="startbox">
+	<div id="startbutton" onclick="loadQuestion()">Start</div>
+</div>
+
+
+
+
+<div id="lightbox" onclick="closeLightBox()">
+   <div id="message">This is the message</div>
+</div>
+
+
+<div class="grid-container">
+    <div class="top">
+  
+	 <h1>Minecraft Quiz</h1>
+	 <progress value="0" max="10" id="countdown"></progress>
+
+	 
+	</div>
+
+  <div class="header">
+  </div>
+  
+  <div class="left">
+    <div class="wrapper-question">
+		 <p id="question">The Question</p>
+		 <div class="options" id="a" onclick="markIt('a')">A.</div>
+		 <div class="options" id="b" onclick="markIt('b')">B.</div>
+		 <div class="options" id="c" onclick="markIt('c')">C.</div>
+		 <div class="options" id="d" onclick="markIt('d')">D.</div>
+	</div>
+	<div class="hint-wrapper">
+		<h2>Hint:</h2>
+		<p id="hint">You have 3 Hints remaining, Press 'Need Hint?' for a Hint!</p>
+	</div>
+  </div> 
+
+  
+  <div class="right"> <img id="image" src="quizimages/q1.jpg" alt="quizimage"></div>
+  
+  <div class="footer">
+	<button id="hintbutton">Need a Hint?</button>
+    <p>Score  <span id="score"></span></p>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
